@@ -13,6 +13,16 @@
 		2A7172E22C0F3CEA00DBD96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7172E12C0F3CEA00DBD96F /* Assets.xcassets */; };
 		2A7172E52C0F3CEA00DBD96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7172E32C0F3CEA00DBD96F /* LaunchScreen.storyboard */; };
 		2A7172EE2C0F3D1C00DBD96F /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 2A7172ED2C0F3D1C00DBD96F /* Swinject */; };
+		2A7172F22C0F48E100DBD96F /* TabBarFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172F12C0F48E100DBD96F /* TabBarFabric.swift */; };
+		2A7172F52C10AB8800DBD96F /* CompetitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172F42C10AB8800DBD96F /* CompetitionsViewModel.swift */; };
+		2A7172F72C10AB9B00DBD96F /* CompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172F62C10AB9B00DBD96F /* CompetitionsViewController.swift */; };
+		2A7172F92C10ABEB00DBD96F /* CompetitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172F82C10ABEB00DBD96F /* CompetitionsView.swift */; };
+		2A7172FC2C10C1FF00DBD96F /* CompetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172FB2C10C1FF00DBD96F /* CompetitionCardView.swift */; };
+		2A7172FE2C10C22700DBD96F /* CompetitionCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7172FD2C10C22700DBD96F /* CompetitionCardViewController.swift */; };
+		2A7173012C10EEBF00DBD96F /* EditCompetitionCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173002C10EEBF00DBD96F /* EditCompetitionCardViewController.swift */; };
+		2A7173032C10EED300DBD96F /* EditCompetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */; };
+		2A7173062C10FD4F00DBD96F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173052C10FD4F00DBD96F /* CustomTextField.swift */; };
+		2A7173082C11120900DBD96F /* CompetitionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173072C11120900DBD96F /* CompetitionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +33,16 @@
 		2A7172E12C0F3CEA00DBD96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7172E42C0F3CEA00DBD96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7172E62C0F3CEA00DBD96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7172F12C0F48E100DBD96F /* TabBarFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFabric.swift; sourceTree = "<group>"; };
+		2A7172F42C10AB8800DBD96F /* CompetitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewModel.swift; sourceTree = "<group>"; };
+		2A7172F62C10AB9B00DBD96F /* CompetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewController.swift; sourceTree = "<group>"; };
+		2A7172F82C10ABEB00DBD96F /* CompetitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsView.swift; sourceTree = "<group>"; };
+		2A7172FB2C10C1FF00DBD96F /* CompetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCardView.swift; sourceTree = "<group>"; };
+		2A7172FD2C10C22700DBD96F /* CompetitionCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCardViewController.swift; sourceTree = "<group>"; };
+		2A7173002C10EEBF00DBD96F /* EditCompetitionCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompetitionCardViewController.swift; sourceTree = "<group>"; };
+		2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompetitionCardView.swift; sourceTree = "<group>"; };
+		2A7173052C10FD4F00DBD96F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2A7173072C11120900DBD96F /* CompetitionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,9 @@
 		2A7172D72C0F3CE700DBD96F /* Vulcano */ = {
 			isa = PBXGroup;
 			children = (
+				2A7173042C10FD3A00DBD96F /* CustomViews */,
+				2A7172F32C10AB6700DBD96F /* CompetitionsScreen */,
+				2A7172F02C0F442F00DBD96F /* Fabrics */,
 				2A7172D82C0F3CE700DBD96F /* AppDelegate.swift */,
 				2A7172DA2C0F3CE700DBD96F /* SceneDelegate.swift */,
 				2A7172DC2C0F3CE700DBD96F /* ViewController.swift */,
@@ -64,6 +87,53 @@
 				2A7172E62C0F3CEA00DBD96F /* Info.plist */,
 			);
 			path = Vulcano;
+			sourceTree = "<group>";
+		};
+		2A7172F02C0F442F00DBD96F /* Fabrics */ = {
+			isa = PBXGroup;
+			children = (
+				2A7172F12C0F48E100DBD96F /* TabBarFabric.swift */,
+			);
+			path = Fabrics;
+			sourceTree = "<group>";
+		};
+		2A7172F32C10AB6700DBD96F /* CompetitionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2A7172FA2C10C14900DBD96F /* CompetitionCardScreen */,
+				2A7172F42C10AB8800DBD96F /* CompetitionsViewModel.swift */,
+				2A7172F62C10AB9B00DBD96F /* CompetitionsViewController.swift */,
+				2A7172F82C10ABEB00DBD96F /* CompetitionsView.swift */,
+				2A7173072C11120900DBD96F /* CompetitionCollectionViewCell.swift */,
+			);
+			path = CompetitionsScreen;
+			sourceTree = "<group>";
+		};
+		2A7172FA2C10C14900DBD96F /* CompetitionCardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2A7172FF2C10EE8E00DBD96F /* EditCompetitionCardScreen */,
+				2A7172FB2C10C1FF00DBD96F /* CompetitionCardView.swift */,
+				2A7172FD2C10C22700DBD96F /* CompetitionCardViewController.swift */,
+			);
+			path = CompetitionCardScreen;
+			sourceTree = "<group>";
+		};
+		2A7172FF2C10EE8E00DBD96F /* EditCompetitionCardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2A7173002C10EEBF00DBD96F /* EditCompetitionCardViewController.swift */,
+				2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */,
+			);
+			path = EditCompetitionCardScreen;
+			sourceTree = "<group>";
+		};
+		2A7173042C10FD3A00DBD96F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A7173052C10FD4F00DBD96F /* CustomTextField.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7173032C10EED300DBD96F /* EditCompetitionCardView.swift in Sources */,
+				2A7172F72C10AB9B00DBD96F /* CompetitionsViewController.swift in Sources */,
+				2A7172F22C0F48E100DBD96F /* TabBarFabric.swift in Sources */,
+				2A7172FE2C10C22700DBD96F /* CompetitionCardViewController.swift in Sources */,
 				2A7172DD2C0F3CE700DBD96F /* ViewController.swift in Sources */,
+				2A7173012C10EEBF00DBD96F /* EditCompetitionCardViewController.swift in Sources */,
 				2A7172D92C0F3CE700DBD96F /* AppDelegate.swift in Sources */,
+				2A7172F92C10ABEB00DBD96F /* CompetitionsView.swift in Sources */,
+				2A7173062C10FD4F00DBD96F /* CustomTextField.swift in Sources */,
+				2A7173082C11120900DBD96F /* CompetitionCollectionViewCell.swift in Sources */,
+				2A7172FC2C10C1FF00DBD96F /* CompetitionCardView.swift in Sources */,
 				2A7172DB2C0F3CE700DBD96F /* SceneDelegate.swift in Sources */,
+				2A7172F52C10AB8800DBD96F /* CompetitionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -271,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

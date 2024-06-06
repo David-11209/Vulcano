@@ -23,6 +23,8 @@ class CompetitionCardView: UIView {
     private var backWinView: UIView = UIView()
     private var winLabel: UILabel = UILabel()
 
+    var editClosure: (() -> Void)?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .bg
@@ -65,6 +67,10 @@ class CompetitionCardView: UIView {
         addSubview(editButton)
         editButton.setImage(.edit, for: .normal)
         editButton.translatesAutoresizingMaskIntoConstraints = false
+        let action: UIAction = UIAction { [weak self] _ in
+            self?.editClosure?()
+        }
+        editButton.addAction(action, for: .touchUpInside)
         NSLayoutConstraint.activate([
             editButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             editButton.leadingAnchor.constraint(equalTo: headerTitle.trailingAnchor, constant: 60),

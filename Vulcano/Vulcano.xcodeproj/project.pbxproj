@@ -23,6 +23,13 @@
 		2A7173032C10EED300DBD96F /* EditCompetitionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */; };
 		2A7173062C10FD4F00DBD96F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173052C10FD4F00DBD96F /* CustomTextField.swift */; };
 		2A7173082C11120900DBD96F /* CompetitionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173072C11120900DBD96F /* CompetitionCollectionViewCell.swift */; };
+		2A71730B2C11E43B00DBD96F /* ContainerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71730A2C11E43B00DBD96F /* ContainerAssembly.swift */; };
+		2A71730E2C11E5E700DBD96F /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71730D2C11E5E700DBD96F /* CoordinatorProtocol.swift */; };
+		2A7173102C11E61F00DBD96F /* CompetitionsScreenFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A71730F2C11E61F00DBD96F /* CompetitionsScreenFlowCoordinator.swift */; };
+		2A7173132C11E8E800DBD96F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173122C11E8E800DBD96F /* UIImageExtension.swift */; };
+		2A7173152C11E90600DBD96F /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173142C11E90600DBD96F /* UICollectionViewCellExtension.swift */; };
+		2A7173172C11EF5E00DBD96F /* CompetitionCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173162C11EF5E00DBD96F /* CompetitionCardViewModel.swift */; };
+		2A7173192C11F1F100DBD96F /* EditCompetitionCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7173182C11F1F100DBD96F /* EditCompetitionCardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,13 @@
 		2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompetitionCardView.swift; sourceTree = "<group>"; };
 		2A7173052C10FD4F00DBD96F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2A7173072C11120900DBD96F /* CompetitionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A71730A2C11E43B00DBD96F /* ContainerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAssembly.swift; sourceTree = "<group>"; };
+		2A71730D2C11E5E700DBD96F /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2A71730F2C11E61F00DBD96F /* CompetitionsScreenFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsScreenFlowCoordinator.swift; sourceTree = "<group>"; };
+		2A7173122C11E8E800DBD96F /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		2A7173142C11E90600DBD96F /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
+		2A7173162C11EF5E00DBD96F /* CompetitionCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCardViewModel.swift; sourceTree = "<group>"; };
+		2A7173182C11F1F100DBD96F /* EditCompetitionCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCompetitionCardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,9 @@
 		2A7172D72C0F3CE700DBD96F /* Vulcano */ = {
 			isa = PBXGroup;
 			children = (
+				2A7173112C11E8CF00DBD96F /* Extensions */,
+				2A71730C2C11E5BF00DBD96F /* FlowCoordinator */,
+				2A7173092C11E3DE00DBD96F /* Assemblies */,
 				2A7173042C10FD3A00DBD96F /* CustomViews */,
 				2A7172F32C10AB6700DBD96F /* CompetitionsScreen */,
 				2A7172F02C0F442F00DBD96F /* Fabrics */,
@@ -115,6 +132,7 @@
 				2A7172FF2C10EE8E00DBD96F /* EditCompetitionCardScreen */,
 				2A7172FB2C10C1FF00DBD96F /* CompetitionCardView.swift */,
 				2A7172FD2C10C22700DBD96F /* CompetitionCardViewController.swift */,
+				2A7173162C11EF5E00DBD96F /* CompetitionCardViewModel.swift */,
 			);
 			path = CompetitionCardScreen;
 			sourceTree = "<group>";
@@ -124,6 +142,7 @@
 			children = (
 				2A7173002C10EEBF00DBD96F /* EditCompetitionCardViewController.swift */,
 				2A7173022C10EED300DBD96F /* EditCompetitionCardView.swift */,
+				2A7173182C11F1F100DBD96F /* EditCompetitionCardViewModel.swift */,
 			);
 			path = EditCompetitionCardScreen;
 			sourceTree = "<group>";
@@ -134,6 +153,32 @@
 				2A7173052C10FD4F00DBD96F /* CustomTextField.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2A7173092C11E3DE00DBD96F /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				2A71730A2C11E43B00DBD96F /* ContainerAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		2A71730C2C11E5BF00DBD96F /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A71730D2C11E5E700DBD96F /* CoordinatorProtocol.swift */,
+				2A71730F2C11E61F00DBD96F /* CompetitionsScreenFlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		2A7173112C11E8CF00DBD96F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A7173122C11E8E800DBD96F /* UIImageExtension.swift */,
+				2A7173142C11E90600DBD96F /* UICollectionViewCellExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,16 +257,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7173192C11F1F100DBD96F /* EditCompetitionCardViewModel.swift in Sources */,
 				2A7173032C10EED300DBD96F /* EditCompetitionCardView.swift in Sources */,
 				2A7172F72C10AB9B00DBD96F /* CompetitionsViewController.swift in Sources */,
+				2A7173132C11E8E800DBD96F /* UIImageExtension.swift in Sources */,
+				2A71730E2C11E5E700DBD96F /* CoordinatorProtocol.swift in Sources */,
 				2A7172F22C0F48E100DBD96F /* TabBarFabric.swift in Sources */,
+				2A71730B2C11E43B00DBD96F /* ContainerAssembly.swift in Sources */,
 				2A7172FE2C10C22700DBD96F /* CompetitionCardViewController.swift in Sources */,
 				2A7172DD2C0F3CE700DBD96F /* ViewController.swift in Sources */,
 				2A7173012C10EEBF00DBD96F /* EditCompetitionCardViewController.swift in Sources */,
 				2A7172D92C0F3CE700DBD96F /* AppDelegate.swift in Sources */,
+				2A7173172C11EF5E00DBD96F /* CompetitionCardViewModel.swift in Sources */,
 				2A7172F92C10ABEB00DBD96F /* CompetitionsView.swift in Sources */,
 				2A7173062C10FD4F00DBD96F /* CustomTextField.swift in Sources */,
 				2A7173082C11120900DBD96F /* CompetitionCollectionViewCell.swift in Sources */,
+				2A7173102C11E61F00DBD96F /* CompetitionsScreenFlowCoordinator.swift in Sources */,
+				2A7173152C11E90600DBD96F /* UICollectionViewCellExtension.swift in Sources */,
 				2A7172FC2C10C1FF00DBD96F /* CompetitionCardView.swift in Sources */,
 				2A7172DB2C0F3CE700DBD96F /* SceneDelegate.swift in Sources */,
 				2A7172F52C10AB8800DBD96F /* CompetitionsViewModel.swift in Sources */,

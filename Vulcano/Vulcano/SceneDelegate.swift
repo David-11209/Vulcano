@@ -5,22 +5,47 @@
 //  Created by Давид Васильев on 04.06.2024.
 //
 
+import Swinject
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let container = Container()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
+        let assembly = ContainerAssembly()
+        assembly.assemble(container: container)
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        
-        let viewController = CompetitionsViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.isNavigationBarHidden = true
-        self.window?.rootViewController = navigationController
+//        guard let networkMonitor = container.resolve(
+//            NetworkMonitorProtocol.self
+//        ) else { return }
+//        networkMonitor.startMonitoring()
+//        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) {_ in
+//            if networkMonitor.isConnected {
+//                self.makeTabBarControllerVisible()
+//            } else {
+//                guard let viewModel = self.container.resolve(
+//                    MissingInternetViewModelProtocol.self
+//                ) else { return }
+//                let viewController = MissingInternetViewController(viewModel: viewModel)
+//                viewController.exitClosure = {
+//                    self.makeTabBarControllerVisible()
+//                }
+//                self.window?.rootViewController = viewController
+//                self.window?.makeKeyAndVisible()
+//            }
+//
+//        }
+        self.makeTabBarControllerVisible()
+    }
+
+    func makeTabBarControllerVisible() {
+        let fabric = TabBarFabric(container: self.container)
+        let tbController = fabric.makeTabBarController()
+        self.window?.rootViewController = tbController
         self.window?.makeKeyAndVisible()
     }
 

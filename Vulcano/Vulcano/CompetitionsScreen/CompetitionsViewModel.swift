@@ -7,7 +7,11 @@
 
 import UIKit
 
-class CompetitionsViewModel: NSObject, UICollectionViewDataSource {
+protocol CompetitionsViewModelProtocol: UICollectionViewDataSource {
+
+}
+
+class CompetitionsViewModel: NSObject, CompetitionsViewModelProtocol {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }

@@ -25,12 +25,12 @@ class TabBarFabric: TabBarFabricProtocol {
     func makeTabBarController() -> UIViewController {
         let tabBar: UITabBarController = UITabBarController()
         tabBar.tabBar.backgroundColor = .white
-//
-//        let mainFlowCoordinator = MainScreenFlowCoordinator(
-//            navigationController: UINavigationController(),
-//            container: container
-//        )
-//        mainFlowCoordinator.start()
+
+        let competitionsFlowCoordinator = CompetitionsScreenFlowCoordinator(
+            navigationController: UINavigationController(),
+            container: container
+        )
+        competitionsFlowCoordinator.start()
 
 //        let hearingTestFlowCoordinator = HearingTestScreenFlowCoordinator(
 //            navigationController: UINavigationController(),
@@ -51,7 +51,7 @@ class TabBarFabric: TabBarFabricProtocol {
 //        profileFlowCoordinator.start()
 
         tabBar.viewControllers = [
-//            mainFlowCoordinator.navigationController,
+            competitionsFlowCoordinator.navigationController
 //            hearingTestFlowCoordinator.navigationController,
 //            knowledgeRepetitionFlowCoordinator.navigationController,
 //            profileFlowCoordinator.navigationController
@@ -63,8 +63,8 @@ class TabBarFabric: TabBarFabricProtocol {
         }
         tabBar.tabBar.isTranslucent = true
         tabBar.tabBar.unselectedItemTintColor = .systemGray2
-        tabBar.tabBar.tintColor = .black
-        tabBar.tabBar.backgroundColor = .white
+        tabBar.tabBar.tintColor = .systemGray2
+        tabBar.tabBar.backgroundColor = .black
         return tabBar
     }
 }
